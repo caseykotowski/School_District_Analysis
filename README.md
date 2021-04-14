@@ -24,10 +24,12 @@ The district summary DataFrame includes the following columns
  The original output is:
 
 ![Original District Summary](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/district_summary_df.png)
+District Summary
 
 When Thomas HS grade 9 is removed, the output is now:
  
  ![Updated District Summary](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/district_summary_df_change.png)
+ Updated District Summary
  
  The change in averages and percent passing are subtle, but noticable. There was a difference of a tenth of a point and a tenth of a percent in each category. Removing the scores for the Thomas HS 9th grade class didn't cause more of a change because overall, there are few of them in the district
 
@@ -44,46 +46,60 @@ The per school summary takes the same columns as the district summary, but break
         "% Overall Passing": overall_passing_percentage}])
 ```
 ![Per School Summary](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/per_school_summary_df.png)
+Per School Summary
 
 ![Per School Summary Update](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/per_school_summary_df_update.png)
+Updated Per School Summary
 
 * School Ranking
 ![School Ranking](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/school_rank_df.png)
+Top School Rankings
 
 ![Updated School Ranking](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/school_rank_df_update.png)
+Updated Top School Rankings
 
 Thomas High School's rank is not changed. It remains the second best performing school in the district, but the margins are changed. Griffen HS is now less than a tenth of a percentage away from over taking THS's spot. 
 * Scores by Grade
 
 ![Reading Scores by Grade](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/reading_scores_by_grade.png)
+Reading Scores by Grade
 
 ![Reading Scores by Grade Update](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/reading_scores_by_grade_update.png)
+Updated Reading Scores by Grade
 
 ![Math Scores by Grade](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/math_scores_by_grade.png)
+Math Scores by Grade
 
 ![Math Scores by Grade Update](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/math_scores_by_grade_update.png)
+Updated Math Scores by Grade
 
 The scores by grade is the most obviously changed DataFrame. The overall averages per school are only subtly changed by the removal of THS 9th grade (which tells me that and is supported by the scores by grade for THS that each grade performed similarly), but looking at the grades in each school makes the removal of the 9th grade THS scores obvious. Their cell is replaced by a NaN, or "Not a Number". It's a clear reminder that I removed that data, which is why a disclaimer about the removal of that data is necessary. If a school board member looked at my updated data without the disclaimer, they would be confused. 
 * Scores by Spend 
 There is no statistically significant difference in these two dataframes. By grouping the grades into schools, and the schools into a larger group, the number of students' whos grades were removed have become so small in THS's spend category, that it takes far more significant figures to notice a change than what I'm presenting to the school board. 
 
 ![Scores by Per Student Spend](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/scores_by_school_spend.png)
+Scores by School Spend (Per Student)
 
 ![Updated Scores by Spend](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/scores_by_school_spend_update.png)
+Updated Scores by School Spend (Per Student)
 
 * Scores by School Size
 The same reasoning applies to these DataFrames as well. There are even fewer groups, so the removed students cause an even smaller percent change. To the school board, this data remains unchanged. 
 
 ![Scores by School Size](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/scores_by_school_size.png)
+Scores by School Size
 
 ![Updated Scores by Size](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/scores_by_school_size_update.png)
+Updated Scores by School Size
 
 * Scores by School Type
 With only two types of school, the previous reasoning for a lack of change is even more true. The analysis of scores by school type was not significantly changed by eliminating a set of potentially manipulated grades. The overall trends still hold true. 
 
 ![Scores by School Type](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/scores_by_type.png)
+Scores by School Type
 
 ![Updated Scores by Type](https://github.com/caseykotowski/School_District_Analysis/blob/main/Resources/scores_by_type_update.png)
+Updated Scores by School Type
 
 ## Summary 
 
